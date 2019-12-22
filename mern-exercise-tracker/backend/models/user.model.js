@@ -8,7 +8,7 @@ const userSchema = new Schema({
         required: true,
         unique: true,
         trim: true,
-        minlenght: 3
+        minlength: 3
     },
 }, {
     timestamps: true,
@@ -16,4 +16,4 @@ const userSchema = new Schema({
 
 const User = mongoose.model('User', userSchema);
 
-model.exports = User;
+module.exports = User;
